@@ -1,0 +1,28 @@
+{
+  "name": "nodeproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.ts",
+  "scripts": {
+    "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist",
+    "start": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.0.10",
+    "chalk": "^2.4.2",
+    "concurrently": "^4.1.1",
+    "ejs": "^2.6.2",
+    "http": "0.0.0",
+    "inquirer": "^6.4.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.2"
+  },
+  "bin": {
+    "mycli": "./dist/index.js"
+  }
+}
